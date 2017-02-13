@@ -4,7 +4,16 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/', (req, res, next)=>{
-  res.send('booyah')
+  res.json([
+    {
+      id:1,
+      name: 'booyah'
+    },
+    {
+      id:2,
+      name: 'booyah2'
+    }
+  ])
 })
 
 module.exports = router;
